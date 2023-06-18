@@ -23,7 +23,6 @@ if (dig1 + dig2 != 1)
 {
 
 putchar(',');
-                                     
 putchar(' ');
 }
 }
