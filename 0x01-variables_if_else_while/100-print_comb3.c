@@ -18,10 +18,8 @@ if (dig1 != dig2 && dig1 < dig2)
 putchar(dig1 + 48);
 putchar(dig2 + 48);
 
-
-if (dig1 + dig2 != 1)
+if (dig1 + dig2 != 17)
 {
-
 putchar(',');
 putchar(' ');
 }
