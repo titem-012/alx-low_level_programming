@@ -1,18 +1,13 @@
 #include "main.h"
+
 /**
- * _isdigit - check if input is digit
- * between 0 -9
- * @c: input
- * Return: 1 if c is digit,else 0
+ * mul - multiplies two integers
+ * @a: First input
+ * @b: Second input
+ * Return: result
  */
-int _isdigit(int c)
+
+int mul(int a, int b)
 {
-if (c >= '0' && c <= '9')
-{
-return (1);
-}
-else
-{
-return (0);
-}
+return (a * b);
 }
