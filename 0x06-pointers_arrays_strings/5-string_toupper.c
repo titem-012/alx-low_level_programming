@@ -1,16 +1,22 @@
 #include "main.h"
+#include <ctype.h>
+
 /**
- * reverse_array - reverses array of integers
- * @a: pointer to an array of integres
- * @n: number of elements in the array
+ * *string_toupper -  function that changes all lowercase
+ *  to uppercase.
+ * @str: string input
+ * Return: string
+ *
  */
-void reverse_array(int *a, int n)
+
+char *string_toupper(char *str)
 {
-int x, count;
-for (x = 0; x < n / 2; x++)
+char *ptr = str;
+
+while (*ptr)
 {
-count = a[x];
-a[x] = a[n - x - 1];
-a[n - x - 1] = count;
+*ptr = toupper(*ptr);
+ptr++;
 }
+return (str);
 }
