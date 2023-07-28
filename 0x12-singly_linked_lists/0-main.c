@@ -1,4 +1,3 @@
-0-main.c
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
