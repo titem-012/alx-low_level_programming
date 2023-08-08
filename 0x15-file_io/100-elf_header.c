@@ -269,7 +269,7 @@ exit(98);
  * Description: If the file is not an ELF File or
  *              the function fails - exit code 98.
  */
-int main(int attribute((unused)) argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 Elf64_Ehdr *header;
 int o, r;
