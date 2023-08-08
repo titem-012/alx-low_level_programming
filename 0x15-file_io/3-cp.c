@@ -5,7 +5,7 @@
 char *create_buffer(char *file);
 void close_file(int fd);
 
-/
+/**
  * create_buffer - Allocates 1024 bytes for a buffer.
  * @file: The name of the file buffer is storing chars for.
  *
@@ -27,7 +27,7 @@ exit(99);
 return (buffer);
 }
 
-/
+/**
  * close_file - Closes file descriptors.
  * @fd: The file descriptor to be closed.
  */
@@ -73,7 +73,7 @@ r = read(from, buffer, 1024);
 to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 do {
-if (from == -1  r == -1)
+if (from == -1 || r == -1)
 {
 dprintf(STDERR_FILENO,
 "Error: Can't read from file %s\n", argv[1]);
@@ -82,7 +82,7 @@ exit(98);
 }
 
 w = write(to, buffer, r);
-if (to == -1  w == -1)
+if (to == -1 || w == -1)
 {
 dprintf(STDERR_FILENO,
 "Error: Can't write to %s\n", argv[2]);
